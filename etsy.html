@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Etsy Project</title>
+  <link rel="stylesheet" href="etsy.css">
+</head>
+
+<body>
+
+  <div id="canvas">
+
+    <!-- top header div -->
+    <div class="TopHeader">
+      <h1 id="etsy">Etsy</h1>
+      <input id="search-input" placeholder ="whiskey"></input>
+      <button id="search-button">Search</button>
+      <div class="TopHeader-Right">
+        <p id="sell">Sell on Etsy</p>
+        <p id="register">Register</p>
+        <button id="sign-in">Sign In</button>
+        <button id="discover">Discover Icon</button>
+        <button id="cart">Cart Icon</button>
+      </div>
+    </div>
+
+
+    <!-- sub header div -->
+    <div class="SubHeader">
+      <p>Jewelrey & Accessories</p>
+      <p>Clothing & Shoes</p>
+      <p>Home & Living</p>
+      <p>Wedding & Party</p>
+      <p>Toys & Entertainment</p>
+      <p>Art & Collectibles</p>
+      <p>Craft Supplies</p>
+      <p>Vintage</p>
+      <p>Gifts (w/img)</p>
+    </div>
+    <!-- top buttons div -->
+    <div class="TopButtons">
+      <button id="decnter">whisey decanter</button>
+      <button id="glasses">whiskey glasses</button>
+      <button id="barrel">whiskey barrel</button>
+      <button id="stones">whiskey stones</button>
+      <button id="shirt">whiskey shirt</button>
+      <button id="whiskey">whiskey</button>
+      <button id="scotch">scotch</button>
+      <button id= "dispenser">whiskey dispenser</button>
+      <button id="bourbon">bourbon</button>
+      <button id="beer">beer</button>
+    </div>
+
+
+
+
+
+    <!-- window div -->
+    <div class="Window">
+
+      <form id="sidebar">
+        <fieldset>
+          <div class="special-offers">
+            <label>Special offers</label>
+            <div class="inputs"><input type="checkbox"><label>on sale</label></div>
+          </div>
+          <div class="categories">
+            <label>All categories</label>
+            <p>Home & Living</p>
+            <p>Art & Collectibles</p>
+            <p>Clothing</p>
+            <p>Weddings</p>
+            <p>+Show more(underlined)</p>
+          </div>
+          <div class="shipping">
+            <label>Shipping</label>
+            <div class='inputs'><input type="checkbox"><label>Free shipping</label></div>
+            <div class="inputs"><input type="checkbox"><label>Ready to ship in 1 business day></label></div>
+            <div class="inputs"><input type="checkbox"><label>Ready to ship within 3 business days></label></div>
+          </div>
+          <div class="material">
+            <label>Material</label>
+            <div class="inputs"><input type="checkbox"><label>Ceramic</label></div>
+            <div class="inputs"><input type="checkbox"><label>Cork</label></div>
+            <div class="inputs"><input type="checkbox"><label>Fabric</label></div>
+            <div class="inputs"><input type="checkbox"><label>Glass</label></div>
+            <div class="inputs"><input type="checkbox"><label>Metal</label></div>
+            <p>+Show more(underlined)</p>
+          </div>
+          <div class="color">
+            <label>Color</label>
+            <div class="inputs"><input type="checkbox"><label>Beige</label></div>
+            <div class="inputs"><input type="checkbox"><label>Black</label></div>
+            <div class="inputs"><input type="checkbox"><label>Blue</label></div>
+            <div class="inputs"<input type="checkbox"><label>Bronze</label></div>
+            <div class="inputs"><input type="checkbox"><label>Brown</label></div>
+            <p>+Show more(underlined)</p>
+          </div>
+          <div class="personalized">
+            <label>Can be personalized</label>
+            <div class="inputs"><input type="radio" name="personalized"><label>yes</label></div>
+            <div class="inputs"><input type="radio" name="personalized"><label>no</label></div>
+          </div>
+          <div class="holiday">
+            <label>Holiday</label>
+            <div class="inputs"><input type="checkbox"><label>Christmas</label></div>
+            <div class="inputs"><input type="checkbox"><label>Cinco de Mayo</label></div>
+            <div class="inputs"><input type="checkbox"><label>Easter</label></div>
+            <div class="inputs"><input type="checkbox"><label>Father's Day</label></div>
+            <div class="inputs"><input type="checkbox"><label>Halloween</label></div>
+            <p>+Show me(underlined)</p>
+          </div>
+          <div class="shop-radios">
+            <label>Shop location</label>
+            <div class="inputs"><input type="radio" name="location"><label>Anywhere</label></div>
+            <div class="inputs"><input type="radio" name="location"><label>United States</label></div>
+            <div class="inputs"><input type="radio" name="location"><label>Custon</label></div>
+          </div>
+          <div class="shop-input">
+            <input type="text" for="location" placeholder="Enter location"></input>
+            <button>></button>
+          </div>
+          <div class="item-type">
+            <label>Item type</label>
+            <div class="inputs"><input type="radio" name="item"><label>All items</label></div>
+            <div class="inputs"><input type="radio" name="item"><label>Handmade</label></div>
+            <div class="inputs"><input type="radio" name="item"><label>Vintage</label></div>
+          </div>
+          <div class="price">
+            <label>Price($)</label>
+            <div class="inputs"><input type="radio" name="price"><label>Any Price</label></div>
+            <div class="inputs"><input type="radio" name="price"><label>Under $50</label></div>
+            <div class="inputs"><input type="radio" name="price"><label>$50 to $100></label></div>
+            <div class="inputs"><input type="radio" name="price"><label>$100 to $150</label></div>
+            <div class="inputs"><input type="radio" name="price"><label>Over $150</label></div>
+            <div class="inputs"><input type="radio" name="price"><label>Custom</label></div>
+          </div>
+          <div class="price-input">
+            <input type="text" for="price" placeholder="Low">
+            <p>to</p>
+            <input type="text" for="price" placeholder="High">
+            <button>></button>
+          </div>
+          <div class="ordering-options">
+            <label>Ordering options</label>
+            <div class="inputs"><input type="checkbox"><label>Accepts Etsy gift cards</label></div>
+            <div class="inputs"><input type="checkbox"><label>Can be gift-wrapped</label></div>
+          </div>
+          <div class="ship-to">
+            <label>Ship to</label>
+            <select placeholder="United States">
+              <option>United States</option>
+              <option>Canada</option>
+              <option>Mexico</option>
+            </select>
+        </fieldset>
+      </form>
+
+
+
+      <div class="json">
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</body>
+
+</html>
