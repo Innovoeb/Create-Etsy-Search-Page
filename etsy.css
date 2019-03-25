@@ -260,9 +260,20 @@ box-sizing: border-box;
   flex-direction: column;
 }
 
+/* json data div */
+
 .json {
   height: 5631px;
-  width: 1060px;
-  position: relative;
+  width: 1100px;
+  position: absolute;
   left: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.products {
+  height: 305px;
+  width: 269px;
+  margin: 10px 0;
 }
