@@ -12,6 +12,14 @@ let template = `
 
 let products = document.querySelector(".json");
 
+const viewitems = items.results.map(a => {
+  return {
+    title: a.title,
+    shop: a.Shop.shop_name,
+    price: a.price,
+    image: unescape(a.Images[0].url_170x135)
+  }
+});
 
 
 
@@ -20,13 +28,15 @@ let products = document.querySelector(".json");
 
 
 
-let jsonstr = items.map(item => {
+let jsonstr = viewitems.map(a => {
 return `
   <div class="products">
-  /<img src ="${a.Images}">
+    <img src ="${a.image}">
     <p class="title">${a.title}</p>
-    <p class="maker">${a.Shop}</p>
-    <p class="product-price">${a.price}</p>
+    <p class="maker">${a.shop}</p>
+    <p class="product-price">$${a.price}</p>
   </div>
   `
 }).join("")
+
+products.innerHTML = jsonstr
