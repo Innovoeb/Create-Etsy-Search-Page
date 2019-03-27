@@ -29,10 +29,10 @@ const viewitems = items.results.map(a => {
 
 
 let jsonstr = viewitems.map(a => {
-return `
+  return `
   <div class="products">
     <img src ="${a.image}">
-    <p class="title">${a.title}</p>
+    <p class="title">${a.title.substring(0, 25)}...</p>
     <p class="maker">${a.shop}</p>
     <p class="product-price">$${a.price}</p>
   </div>

@@ -3,7 +3,10 @@
 
 <head>
   <title>My Etsy Project</title>
+
   <link rel="stylesheet" href="etsy.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -20,8 +23,14 @@
         <p id="sell">Sell on Etsy</p>
         <p id="register">Register</p>
         <button id="sign-in">Sign In</button>
-        <button id="discover">Discover Icon</button>
-        <button id="cart">Cart Icon</button>
+        <div id="discover">
+          <i class="fas fa-toolbox fa-2x"></i>
+          <p id="discover-text">discover</p>
+        </div>
+        <div id="cart">
+          <i class="fas fa-shopping-cart fa-2x"></i>
+          <p id="cart-text">cart</p>
+        </div>
       </div>
     </div>
 
@@ -36,7 +45,7 @@
       <p>Art & Collectibles</p>
       <p>Craft Supplies</p>
       <p>Vintage</p>
-      <p>Gifts (w/img)</p>
+      <p>Gifts</p>
     </div>
     <!-- top buttons div -->
     <div class="TopButtons">
@@ -66,18 +75,18 @@
             <div class="inputs"><input type="checkbox"><label>on sale</label></div>
           </div>
           <div class="categories">
-            <label>All categories</label>
-            <p>Home & Living</p>
-            <p>Art & Collectibles</p>
-            <p>Clothing</p>
-            <p>Weddings</p>
-            <p>+Show more(underlined)</p>
+            <p>All categories</p>
+              <p>Home & Living</p>
+              <p>Art & Collectibles</p>
+              <p>Clothing</p>
+              <p>Weddings</p>
+              <p>+Show more(underlined)</p>
           </div>
           <div class="shipping">
             <label>Shipping</label>
             <div class='inputs'><input type="checkbox"><label>Free shipping</label></div>
-            <div class="inputs"><input type="checkbox"><label>Ready to ship in 1 business day></label></div>
-            <div class="inputs"><input type="checkbox"><label>Ready to ship within 3 business days></label></div>
+            <div class="inputs"><input type="checkbox"><label>Ready to ship in 1 business day</label></div>
+            <div class="inputs"><input type="checkbox"><label>Ready to ship within 3 business days</label></div>
           </div>
           <div class="material">
             <label>Material</label>
@@ -93,7 +102,7 @@
             <div class="inputs"><input type="checkbox"><label>Beige</label></div>
             <div class="inputs"><input type="checkbox"><label>Black</label></div>
             <div class="inputs"><input type="checkbox"><label>Blue</label></div>
-            <div class="inputs"<input type="checkbox"><label>Bronze</label></div>
+            <div class="inputs"><input type="checkbox"><label>Bronze</label></div>
             <div class="inputs"><input type="checkbox"><label>Brown</label></div>
             <p>+Show more(underlined)</p>
           </div>
@@ -118,8 +127,8 @@
             <div class="inputs"><input type="radio" name="location"><label>Custon</label></div>
           </div>
           <div class="shop-input">
-            <input type="text" for="location" placeholder="Enter location"></input>
-            <button>></button>
+            <input id="foo" type="text" for="location" placeholder="Enter location"></input>
+            <button id="bar">></button>
           </div>
           <div class="item-type">
             <label>Item type</label>
@@ -137,10 +146,10 @@
             <div class="inputs"><input type="radio" name="price"><label>Custom</label></div>
           </div>
           <div class="price-input">
-            <input type="text" for="price" placeholder="Low">
+            <input id="foo2" type="text" for="price" placeholder="Low">
             <p>to</p>
-            <input type="text" for="price" placeholder="High">
-            <button>></button>
+            <input id="foo3" type="text" for="price" placeholder="High">
+            <button id="bar2">></button>
           </div>
           <div class="ordering-options">
             <label>Ordering options</label>
@@ -161,7 +170,6 @@
 
 
       <div class="json">
-        
       </div>
 
       </div>

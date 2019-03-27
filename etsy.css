@@ -24,6 +24,11 @@ box-sizing: border-box;
   left: 250px;
 }
 
+#etsy {
+  color: #f45800;
+  font-family: "Courier New", Helvetica, Arial, sans-serif;
+}
+
 #search-input {
   height: 30px;
 }
@@ -41,6 +46,10 @@ box-sizing: border-box;
   width: 79px;
   position: relative;
   top: 20px;
+  background-color: black;
+  color: white;
+  font: "Droid Sans";
+  font-weight: bold;
 }
 
 /* sub top header right */
@@ -68,11 +77,29 @@ box-sizing: border-box;
   height: 67px;
   width: 80px;
   margin-left: 15px;
+  position: relative;
+  left: 4px;
+  top: 5px;
+}
+
+#discover-text {
+  position: absolute;
+  top: 15px;
+  left: -10px;
 }
 
 #cart {
   height: 42px;
   width: 80px;
+  position: relative;
+  left: -5px;
+  top: -7px;
+}
+
+#cart-text {
+  position: absolute;
+  top: 15px;
+  left: 8px;
 }
 
 #sign-in {
@@ -80,6 +107,8 @@ box-sizing: border-box;
   width: 64px;
   margin-left: 7px;
   margin-bottom: 15px;
+  border: 1px solid black;
+  background-color: white;
 }
 
 /* sub header div */
@@ -103,6 +132,12 @@ box-sizing: border-box;
   position: relative;
   left: 300px;
   top: 23px;
+  border-radius: 3px;
+  box-shadow: none;
+
+
+
+
 }
 
 /* top buttons */
@@ -111,60 +146,76 @@ box-sizing: border-box;
   height: 38px;
   width: 143px;
   margin-right: 1px;
+  background-color: #ffac62;
+
+
 }
 
 #glasses {
   height: 38px;
   width: 132px;
   margin-right: 1px;
+  background-color: #ffac62;
 }
 
 #barrel {
   height: 38px;
   width: 122px;
   margin-right: 1px;
+  background-color: #ffac62;
 }
 
 #stones {
   height: 38px;
   width: 127px;
   margin-right: 1px;
+  background-color: #ffac62;
 }
 
 #shirt {
   height: 38px;
   width: 112px;
   margin-right: 1px;
+  background-color: #ffac62;
 }
 
 #whiskey {
   height: 38px;
   width: 71px;
   margin-right: 1px;
+  background-color: #ffac62;
 }
 
 #scotch {
   height: 38px;
   width: 71px;
   margin-right: 1px;
+  background-color: #ffac62;
 }
 
 #dispenser {
   height: 38px;
   width: 148px;
   margin-right: 1px;
+  background-color: #ffac62;
 }
 
 #bourbon {
   height: 38px;
   width: 83px;
   margin-right: 1px;
+  background-color: #fecf84;
+
+
 }
 
 #beer {
   height: 38px;
   width: 56px;
   margin-right: 1px;
+  background-color: #fecf84;
+
+
 }
 
 .Window {
@@ -187,22 +238,27 @@ box-sizing: border-box;
   top: 1px;
   left: 100px;
   float: left;
+  font-size: 14px;
 }
 /* sidebar sub-elements */
 
 .special-offers {
   display: flex;
   flex-direction: column;
+  background-color: #fbead8;
+  padding: 5px;
 }
 
 .categories {
-  display: flex;
+  display: block;
   flex-direction: column;
+
 }
 
 .shipping {
   display: flex;
   flex-direction: column;
+
 }
 
 .material {
@@ -231,8 +287,18 @@ box-sizing: border-box;
 }
 
 .shop-input {
-  display: flex;
+  display: inline;
   flex-direction: column;
+}
+
+#foo {
+  height: 38px;
+  width: 140px;
+}
+
+#bar {
+  height: 38px;
+  width: 36px;
 }
 
 .item-type {
@@ -247,7 +313,23 @@ box-sizing: border-box;
 
 .price-input {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#foo2 {
+  height: 38px;
+  width: 58px;
+}
+
+#foo3 {
+  height: 38px;
+  width: 58px;
+}
+
+#bar2 {
+  height: 38px;
+  width: 38px;
 }
 
 .ordering-options {
